@@ -2,7 +2,7 @@ import './dashboard.css'
 
 function Dashboard({ user }) {
   const handleSignOut = () => {
-    fetch('https://react-test-kappa-self.vercel.app/signOut', {
+    fetch('http://localhost:5000/signOut', {
       method: 'POST',
       credentials: 'include'
     }).then(res => res.json())
