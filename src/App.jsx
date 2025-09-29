@@ -11,7 +11,7 @@ function App() {
   const [userName, setUserName] = useState(null);
 
   useEffect(() => {
-    fetch('http://192.168.100.47:5000/verify', {
+    fetch('http://localhost:5000/verify', {
       method: 'GET',
       credentials: 'include'
     })
@@ -19,9 +19,9 @@ function App() {
       .then(data => {
         if (data.loggedIn) {
           setUserName(data.username);
-          router('/');
+          // router('/');
         } else {
-          router('/signIn');
+          // router('/signIn');
         }
       });
   }, [router]);
