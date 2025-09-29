@@ -12,16 +12,15 @@ function App() {
 
   useEffect(() => {
     fetch('http://localhost:5000/verify', {
-      method: 'GET',
       credentials: 'include'
     })
       .then(data => data.json())
       .then(data => {
         if (data.loggedIn) {
           setUserName(data.username);
-          // router('/');
+          router('/');
         } else {
-          // router('/signIn');
+          router('/signIn');
         }
       });
   }, [router]);
