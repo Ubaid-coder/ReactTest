@@ -11,7 +11,7 @@ function App() {
   const [userName, setUserName] = useState(null);
 
   useEffect(() => {
-    fetch('http://localhost:5000/verify', {
+    fetch('http://192.168.100.47:5000/verify', {
       method: 'GET',
       credentials: 'include'
     })
