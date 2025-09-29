@@ -1,0 +1,12 @@
+.dashboard{
+    text-align: center;
+    margin-top: 50px;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.dashboard-msg{
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #15e015;
+}
